@@ -129,7 +129,6 @@ fun KalkulatorApp() {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     CalcButton("⇆", modifier = Modifier.weight(1f)) { isScientificMode = !isScientificMode }
                     CalcButton("e", bgColor = Color(0xFF616161), modifier = Modifier.weight(1f)) { input += "e" }
-                    // --- 3. PERBAIKI TOMBOL 0 DI SINI ---
                     CalcButton("0", modifier = Modifier.weight(1f)) { input += "0" }
                     CalcButton(".", modifier = Modifier.weight(1f)) { input += "." }
                     CalcButton("=", bgColor = Color(0xFFFF9800), modifier = Modifier.weight(1f)) { hasil = hitung(input) }
